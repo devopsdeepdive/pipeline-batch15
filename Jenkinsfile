@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        echo 'Hello world'
+        git(url: 'https://github.com/devopsdeepdive/pipeline-batch15.git', branch: 'master', credentialsId: 'github_cred')
       }
     }
 
